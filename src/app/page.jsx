@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import Card from "../components/Card";
+import Card from "../components/card.js";
 import image1 from "../assets/high-salary.svg";
 import image2 from "../assets/child.svg";
 import image3 from "../assets/porcent-salary.svg";
