@@ -77,24 +77,30 @@ function App() {
   }
 
   return (
-    <main>
-      <Navbar/>
-      <div className="flex gap-2 justify-between p-16 ">
-        <Card title="MAIOR SALÁRIO" value={highestSalary} icon={image1} />
-        <Card title="MEDIA DE FILHOS" value={mediaChild.toFixed(2)} icon={image2} />
-        <Card title="% SALARIO ATE 1.000,00" value={percentualSalaryBelow1000.toFixed(2)} icon={image3} />
-        <Card title="MEDIA DE SALARIO POPULACAO" value={mediaSalary.toFixed(2)} icon={image4} />
-      </div>
+    <>
+      <main className="h-full">
+        <Navbar/>
+        <div className="flex gap-2 justify-between p-16">
+          <Card title="MAIOR SALÁRIO" value={highestSalary} icon={image1} />
+          <Card title="MEDIA DE FILHOS" value={mediaChild.toFixed(2)} icon={image2} />
+          <Card title="% SALARIO ATE 1.000,00" value={percentualSalaryBelow1000.toFixed(2)} icon={image3} />
+          <Card title="MEDIA DE SALARIO POPULACAO" value={mediaSalary.toFixed(2)} icon={image4} />
+        </div>
 
-      <form onSubmit={handleSubmit}>
-          <h1>Novo Cadastro</h1>
-          <label htmlFor="salary" id="salary">Salário</label>
-          <input  type="number" name="salary" />
-          <label  htmlFor="child">Número de filhos</label>
-          <input type="number" id="child" name="child" />
-        <button type="submit">CADASTRAR</button>
-      </form>
-    </main>
+        <form onSubmit={handleSubmit}>
+            <h1>Novo Cadastro</h1>
+            <label htmlFor="salary" id="salary">Salário</label>
+            <input  type="number" name="salary" />
+            <label  htmlFor="child">Número de filhos</label>
+            <input type="number" id="child" name="child" />
+          <button type="submit">CADASTRAR</button>
+        </form>
+
+        <div className="h-96 bg-[#242424]">
+
+        </div>
+      </main>
+    </>
   );
 }
 
