@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+    font-family: "SoDo Sans SemiBold", Helvetica Neue, Helvetica, Arial,
+        sans-serif;
+}
+.navbar-container {
+    box-shadow: 0px 4px 5px 0px rgba(191, 122, 122, 0.71);
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(191, 122, 122, 0.71);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(191, 122, 122, 0.71);
+}
+.navbar {
+    max-width: 1560px;
+    padding: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.navbar-left svg {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.navbar-left div {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.navbar-left div:hover,
+.find-a-store:hover {
+    color: #00754a;
+}
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left > *,
+.navbar-right > * {
+    margin: 10px;
+}
